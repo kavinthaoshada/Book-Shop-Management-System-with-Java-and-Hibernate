@@ -56,8 +56,11 @@ But customer can't access any admin privileges.
 ## Functional Requirements
 ### Customer Home
 •	Customer can purchase books.
+
 •	Customer can register.
+
 •	can  sign in.
+
 •	after sign in customer able to use all privileges in home such as watchlist, cart etc.
 
 ### Customer Register
@@ -86,24 +89,31 @@ But customer can't access any admin privileges.
 
 ### Checkout
 •	When customer click buy now button in single product view page, they directed to the checkout page
+
 •	Then they can do online transaction in the checkout page.
 
 ### Invoice
 •	When customer done after purchasing book they were directed to the invoice page.
+
 •	Then they can view Invoice and print invoice by clicking print invoice button.
 
 ### Admin Sign In
 •	Admin and employees have privilege to use it.
+
 •	when admin or employee enter email and click sign in button they can receive email and can view verification model.
+
 •	then they can enter verification code receive by email and verify their email address.
+
 •	After that they were directed to the admin dashboard
 
 ### Admin Dashboard
 •	Admin has all privileges.
+
 •	all other employee cant access employee registration and manage employee pages.
 
 ### GRN
 •	all admin and employees have privileges to access.
+
 •	Can do print GRN after create GRN.
 
 ### Manage Stock
@@ -120,18 +130,22 @@ But customer can't access any admin privileges.
 
 ### Employee registration
 •	Only admin has privileges to access.
+
 •	Can register employees
 
 ### View Employee
 •	Only admin has privileges to access.
+
 •	Can view and manage employees
 
 ### Vendor registration
 •	All employees have privileges to access
+
 •	Can register vendors.
 
 ### View vendors
 •	All employees have privileges to access
+
 •	Can manage vendors.
 
 ### Selling History
