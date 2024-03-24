@@ -151,5 +151,19 @@ But customer can't access any admin privileges.
 ### Selling History
 •	Can manage status of selling history.
 
+## Behaviour Requirements
 
+### Usecase view
+
+![01](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/e74c3011-1e6b-477f-b5fe-c1621dd64ae0)
+
+![1](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/6e06f92a-6568-458f-a4d1-862ab2064a4f)
+
+![02](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/9c855c15-865b-4881-a76b-a2c2ed981c64)
+
+![03](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/f7a7a6eb-9b40-4728-ab4e-bfc043f6b1e0)
+
+![04](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/4415205a-9c07-4a89-95a9-3d546c298e96)
+
+![05](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/24e5aa5f-45b5-4c81-a0e9-fa9c56183f39)
 
