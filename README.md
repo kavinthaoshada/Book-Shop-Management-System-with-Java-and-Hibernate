@@ -157,8 +157,6 @@ But customer can't access any admin privileges.
 
 ![01](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/e74c3011-1e6b-477f-b5fe-c1621dd64ae0)
 
-![1](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/6e06f92a-6568-458f-a4d1-862ab2064a4f)
-
 ![02](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/9c855c15-865b-4881-a76b-a2c2ed981c64)
 
 ![03](https://github.com/kavinthaoshada/Book-Shop-Management-System-with-Java-and-Hibernate/assets/86397579/f7a7a6eb-9b40-4728-ab4e-bfc043f6b1e0)
