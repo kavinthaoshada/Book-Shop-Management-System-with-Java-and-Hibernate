@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "QuickSand";
+    src: url("../font/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Honey";
+    src: url("../font/HoneyScript-Light.ttf");
+}
+
+* {
+    font-family: "QuickSand";
+    font-size: 14px;
+}
+
+.main-body {
+    background-image: url("../resources/subtle-prism.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fancy-body {
+    background-image: url("../resources/scattered-forcefields.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rose-body {
+    background-image: url("../resources/rose-petals.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dragon-body {
+    background-image: url("../resources/dragon-scales.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sun-body {
+    background-image: url("../resources/sun-tornado.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    background-image: url("../resources/infinity_logo2.svg");
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title01 {
+    font-family: "Honey";
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.background {
+    background-image: url("../resources/background.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title02 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.label1 {
+    font-size: 18px;
+}
+
+.label2 {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hr-break-1 {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+}
+
+.logo-img {
+    height: 60px;
+    background-image: url("../resources/book_icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.search-btn {
+    height: 43px;
+}
+
+.link-1 {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.poster-caption {
+    margin-bottom: 150px;
+}
+
+.poster-title {
+    font-size: 50px;
+    color: rgb(58, 58, 58);
+}
+
+.poster-text {
+    font-size: 20px;
+    color: black;
+}
+
+.poster-img-1 {
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.poster-caption-1 {
+    margin-bottom: 70px;
+    margin-right: 250px;
+}
+
+.link2 {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.link2:hover {
+    text-decoration: underline;
+}
+
+.link3 {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.link3:hover {
+    text-decoration: underline;
+}
+
+.lbl1 {
+    font-size: 20px;
+}
+
+
+/* pagination  */
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+/* pagination  */
+
+.singleproduct {
+    padding-top: 65px;
+    padding-bottom: 145px;
+    padding: 20px;
+}
+
+.mainImg {
+    height: 555px;
+    background-image: url("../resources/empty.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product_qty {
+    /* width: 105px; */
+    height: 45px;
+    padding: 10px;
+}
+
+.qty_buttons {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px rgb(71, 71, 71);
+}
+
+.qty_inc,
+.qty_dec {
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.qty_inc {
+    border-top-right-radius: 5px;
+}
+
+.qty_dec {
+    padding-top: 5px;
+}
+
+
+/* .emptycart{
+    height: 400px;
+    background-image: url("resources/");
+} */
+
+.emptyView {
+    height: 400px;
+    background-image: url("../resources/box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.invoiceHeaderImg {
+    height: 80px;
+    background-image: url("../resources/infinity_logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.message_box,
+.chat_box {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.first_place {
+    height: 100px;
+    background-image: url("../resources/firstplace.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bodyD {
+    background-image: url("../resources/carousel2/ashley-byrd-KVby0S0GaH4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* link */
+
+.signA:link {
+    text-decoration: none;
+    color: rgb(2, 53, 2);
+}
+
+.signA:visited {
+    color: rgb(12, 19, 12);
+}
+
+.signA:hover {
+    text-decoration: underline;
+    color: #0cff14;
+}
+
+.signA:active {
+    text-decoration: underline;
+}
+
+
+/* link */
+
+.shodowC:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.shodowC1 {
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.shodowC1:hover {
+    box-shadow: 0 0 10px #ff1ff4;
+}
+
+.animEfect {
+    animation-name: anim1;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes anim1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.animEfect2 {
+    animation-name: anim2;
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+
+@keyframes anim2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.mask1 {
+    -webkit-mask-image: url(../resources/rsz_1grunge-infinity-symbol-1.png);
+    mask-image: url(../resources/rsz_1grunge-infinity-symbol-1.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.imgSize {
+    transition: width 5s;
+}
+
+.imgSize:hover {
+    width: 700px;
+}

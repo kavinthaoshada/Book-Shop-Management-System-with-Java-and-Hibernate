@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">-->
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3309/my_book_shop_a?useSSL=false&amp;allowPublicKeyRetrivel=true</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="current_session_context_class">thread</property>
+
+        <mapping class="com.calm.webdb.entity.AuthorEntity"/>
+        <mapping class="com.calm.webdb.entity.BookEntity"/>
+        <mapping class="com.calm.webdb.entity.BookFormatEntity"/>
+        <mapping class="com.calm.webdb.entity.CategoryEntity"/>
+        <mapping class="com.calm.webdb.entity.BookConditionEntity"/>
+        <mapping class="com.calm.webdb.entity.EditionEntity"/>
+        <mapping class="com.calm.webdb.entity.LanguageEntity"/>
+        <mapping class="com.calm.webdb.entity.PublisherEntity"/>
+        <mapping class="com.calm.webdb.entity.StatusEntity"/>
+        <mapping class="com.calm.webdb.entity.GenderEntity"/>
+        <mapping class="com.calm.webdb.entity.UsersEntity"/>
+        <mapping class="com.calm.webdb.entity.BookHasBookFormatEntity"/>
+<!--        <mapping class="com.calm.webdb.entity.BookHasBookFormatEntityPK"/>-->
+        <mapping class="com.calm.webdb.entity.EmployeeTypeEntity"/>
+        <mapping class="com.calm.webdb.entity.EmployeeEntity"/>
+        <mapping class="com.calm.webdb.entity.CityEntity"/>
+        <mapping class="com.calm.webdb.entity.DistrictEntity"/>
+        <mapping class="com.calm.webdb.entity.ProvinceEntity"/>
+        <mapping class="com.calm.webdb.entity.UserHasAddressEntity"/>
+        <mapping class="com.calm.webdb.entity.StockEntity"/>
+        <mapping class="com.calm.webdb.entity.CartEntity"/>
+        <mapping class="com.calm.webdb.entity.EmpProfileImageEntity"/>
+        <mapping class="com.calm.webdb.entity.GrnEntity"/>
+        <mapping class="com.calm.webdb.entity.VendorEntity"/>
+        <mapping class="com.calm.webdb.entity.GrnItemEntity"/>
+        <mapping class="com.calm.webdb.entity.GrnPaymentEntity"/>
+        <mapping class="com.calm.webdb.entity.PaymentTypeEntity"/>
+        <mapping class="com.calm.webdb.entity.ImagesEntity"/>
+        <mapping class="com.calm.webdb.entity.InvoiceEntity"/>
+        <mapping class="com.calm.webdb.entity.InvoicePaymentEntity"/>
+        <mapping class="com.calm.webdb.entity.InvoiceItemEntity"/>
+        <mapping class="com.calm.webdb.entity.ProfileImageEntity"/>
+        <mapping class="com.calm.webdb.entity.RecentEntity"/>
+        <mapping class="com.calm.webdb.entity.WatchlistEntity"/>
+
+    </session-factory>
+</hibernate-configuration>
