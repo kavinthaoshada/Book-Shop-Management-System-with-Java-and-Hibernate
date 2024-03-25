@@ -17,20 +17,18 @@ class AdminServiceTest {
 
     @Test
     void ifCheckAdminExist() {
-        // Set up mocks
+
         SessionFactory sessionFactoryMock = Mockito.mock(SessionFactory.class);
         Session sessionMock = Mockito.mock(Session.class);
         Transaction transactionMock = Mockito.mock(Transaction.class);
         Query queryMock = Mockito.mock(Query.class);
 
-        // Configure mock behavior
         Mockito.when(sessionFactoryMock.openSession()).thenReturn(sessionMock);
         Mockito.when(sessionMock.beginTransaction()).thenReturn(transactionMock);
-        // ... more configurations
 
         EmployeeEntity employeeEntity = new EmployeeEntity();
         employeeEntity.setEmpEmail("admin@example.com");
-        List<EmployeeEntity> employees = List.of(employeeEntity); // Create a list with a mock employee
+        List<EmployeeEntity> employees = List.of(employeeEntity);
 
         Mockito.when(sessionMock.createQuery("SELECT e FROM EmployeeEntity e WHERE e.empEmail = :email",
                         EmployeeEntity.class))
