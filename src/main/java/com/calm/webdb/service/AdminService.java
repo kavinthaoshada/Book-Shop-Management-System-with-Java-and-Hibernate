@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.UUID;
 
 public class AdminService {
+
     public boolean existAdmin(String email){
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session1 = sessionFactory.openSession();
