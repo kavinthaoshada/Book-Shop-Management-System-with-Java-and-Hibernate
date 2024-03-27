@@ -25,13 +25,13 @@ class AdminServiceTest {
 
     @Test
     void testIfAdminExists() {
-        // Mock HibernateUtil and SessionFactory
+
         try (MockedStatic<HibernateUtil> mockedHibernateUtil = Mockito.mockStatic(HibernateUtil.class)) {
-            // Mocking HibernateUtil.getSessionFactory()
+
+            // given
             SessionFactory sessionFactoryMock = Mockito.mock(SessionFactory.class);
             mockedHibernateUtil.when(HibernateUtil::getSessionFactory).thenReturn(sessionFactoryMock);
 
-            // Mock Session, Transaction, Query, and EmployeeEntity (partially)
             Session sessionMock = Mockito.mock(Session.class);
             Transaction transactionMock = Mockito.mock(Transaction.class);
             Query queryMock = Mockito.mock(Query.class);
@@ -39,19 +39,17 @@ class AdminServiceTest {
             employeeEntity.setEmpEmail("admin@example.com");
             List<EmployeeEntity> employees = List.of(employeeEntity);
 
-            // Configure mock behavior for session opening and transaction
             Mockito.when(sessionFactoryMock.openSession()).thenReturn(sessionMock);
             Mockito.when(sessionMock.beginTransaction()).thenReturn(transactionMock);
 
-            // Mock query execution to return the prepared employee
             Mockito.when(sessionMock.createQuery("SELECT e FROM EmployeeEntity e WHERE e.empEmail = :email", EmployeeEntity.class))
                     .thenReturn(queryMock);
             Mockito.when(queryMock.setParameter("email", "admin@example.com")).thenReturn(queryMock);
             Mockito.when(queryMock.getResultList()).thenReturn(employees);
 
-            // Create AdminService with mocked dependencies (indirectly through HibernateUtil)
             AdminService adminService = new AdminService();
 
+            // when
             boolean adminExists = adminService.existAdmin("admin@example.com");
 
             // Verify that the necessary methods were invoked on mocks
@@ -61,9 +59,8 @@ class AdminServiceTest {
             Mockito.verify(queryMock).setParameter("email", "admin@example.com");
             Mockito.verify(queryMock).getResultList();
 
-            // Assertions
-//        Assertions.assertTrue(adminExists);
-            Assertions.assertThat(adminExists);
+            // then
+            Assertions.assertThat(adminExists).isTrue();
         }
     }
 
