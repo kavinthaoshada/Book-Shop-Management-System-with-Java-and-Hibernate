@@ -47,9 +47,8 @@ class AdminServiceTest {
             Mockito.when(queryMock.setParameter("email", "admin@example.com")).thenReturn(queryMock);
             Mockito.when(queryMock.getResultList()).thenReturn(employees);
 
-            AdminService adminService = new AdminService();
-
             // when
+            AdminService adminService = new AdminService();
             boolean adminExists = adminService.existAdmin("admin@example.com");
 
             // Verify that the necessary methods were invoked on mocks
